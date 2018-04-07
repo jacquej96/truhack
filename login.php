@@ -21,17 +21,15 @@
       <section class="tinder-section p-1 p-lg-5 d-flex d-column" style="width: 100%;">
           <div class="tablehold" id="table">
              <div class="subheading mb-5">Login</div>
-                 <form action="process.php" method="post">
+                 <form action="usercheck.php" method="post">
                     Email:<br/>
                     <input type="email" placeholder="Enter Email" name="email" required/><br/>
                     Password:<br/>
                     <input type="password" placeholder="Enter Password" name="password" required/> <br/>
                 </form>
-                <button class = "login-register" >Login</button>
-                <button class = "login-register" >Register</button>
+                <button type = "submit" class = "login-register" >Login</button>
+                <button type = "submit" class = "login-register" >Register</button>
           </div>
-
-
 
       </section>
 
