@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +27,10 @@
                     <input type="email" placeholder="Enter Email" name="email" required/><br/>
                     Password:<br/>
                     <input type="password" placeholder="Enter Password" name="password" required/> <br/>
+                                    <input type = "submit" class = "login-register" >Login</button>
+                <input type = "submit" class = "login-register" >Register</button>
                 </form>
-                <button type = "submit" class = "login-register" >Login</button>
-                <button type = "submit" class = "login-register" >Register</button>
+
           </div>
 
       </section>
