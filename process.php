@@ -20,6 +20,12 @@
   $_SESSION['major'] = $major; 
   $_SESSION['minor'] = $minor; 
   $_SESSION['datee'] = $datee; 
+  $_SESSION['A'] = $A; 
+  $_SESSION['B'] = $B; 
+  $_SESSION['C'] = $C; 
+  $_SESSION['G'] = $G; 
+  $_SESSION['S'] = $S; 
+
 
 
 

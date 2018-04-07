@@ -25,6 +25,12 @@ session_start();
             $major = $row['major'];
             $minor = $row['minor']; 
             $datee = $row['graduation'];
+            $A = $row['Acred'];
+            $B = $row['Bcred'];
+            $C = $row['Ccred'];
+            $G = $row['general'];
+            $S = $row['Scred'];
+
             }
 
 
@@ -37,6 +43,11 @@ session_start();
                 $_SESSION['major'] = $major; 
                 $_SESSION['minor'] = $minor; 
                 $_SESSION['datee'] = $datee; 
+                $_SESSION['A'] = $A; 
+                $_SESSION['B'] = $B; 
+                $_SESSION['C'] = $C; 
+                $_SESSION['G'] = $G; 
+                $_SESSION['S'] = $S; 
               header("Location: main.php");
             }
             else {

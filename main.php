@@ -53,8 +53,26 @@
           </div>
 
         <div class="my-auto" style="width:100%;padding: 20px;text-align:center;border: 1px solid #CECAC1;box-shadow: 3px 3px 1px #CECAC1;">
+
           <div class="subheading mb-5">COURSE SELECTIONS</div>
-          <table>
+
+          <div class="datahold">
+            <textarea class="wew" name="choices" rows='8' cols='48'></textarea>
+            <div class="grades">A Credits Remaining:
+              <span class="A"><?= $_SESSION['A']?></span><br/>
+              B Credits Remaining:
+              <span class="B"><?= $_SESSION['B']?></span><br/>
+              C Credits Remaining:
+              <span class="C"><?= $_SESSION['C']?></span><br/>
+              G Credits Remaining:
+              <span class="G"><?= $_SESSION['G']?></span><br/>
+              S Credits Remaining:
+              <span class="S"><?= $_SESSION['S']?></span><br/>
+
+
+            </div>
+          </div>
+          <!--<table>
             <tr>
               <th>Name</th>
               <th>Number</th>
@@ -73,10 +91,10 @@
               <td>sample</td>
               <td>sample</td>
             </tr>
-          </table>
+          </table>-->
 
           <div class="button-hold">
-            <button class="email" href="mailto:<?= $_SESSION['email']?>" >Email List</button>
+            <a href="mailto:<?= $_SESSION['email']?>"><button class="email" >Email List</button></a>
           </div>
          
         </div>
