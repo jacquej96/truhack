@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,25 +34,34 @@
 
     <div class="container-fluid p-0" >
 
-      <section class="tinder-section p-1 p-lg-5 d-flex d-column" style="width: 65%;">
-        <div class="my-auto" style="width:100%;padding: 20px;text-align:center;border: 5px solid black;">
+      <section class="tinder-section p-1 p-lg-5 d-flex d-column" style="width: 100%;">
+        <div class="my-auto" style="width:100%;padding: 20px;text-align:center;border: 1px solid gray;box-shadow: 3px 3px 1px gray;">
           <div class="subheading mb-5">NAME OF CLASS · COURSE NUMBER</div>
           <p class="mb-5" id="descrip">(picture??)Class description goes here</p>
           <p class="mb-5" id="capteach">Capacity, teacher etc here </p> 
           <p class="mb-5" style="font-weight:bold;"id="type">Class type and credits</p>
           <div class="button-hold">
-          	<button>Placeholdyes</button>
-          	<button>Placeholdno</button>
+          	<button class="yes">Placeholdyes</button>
+          	<button class="no">Placeholdno</button>
           </div>
          
         </div>
+      <div class="tablehold" id="table">
+      	yote
+      </div>
 
       </section>
+
 
   </div>
 
   <!--TODO add table display of selected classes to right wing of page. NOTE: we don't need a printing page. Let's just do an 'email' button or some such that will send the current table values, no need to be extra--> 
-
+  <!--Jacque all your code will go off of the two buttons. One causes the animation (no) one causes add to table (yes). Those
+  two buttons have class names you can select with javascript. The table div is incomplete but you can use the ID 'table' for testing
+  and that will shoot it  to the correct div. Also remember, you'll need to parse the contents of the div that Jon autogenerates. 
+  Javascript has 'silent' errors, meaning it rarely tells you when things go wrong. So to avoid most common errors: wrap everything 
+  in a window.onload() call. That forces your code to execute only one the site (and thus, PHP) have fully loaded. That'll save you
+  a lotta trash null pointers. --> 
 
 
 <div class="hiddens"></div> <!--this is where jon can dump data as discussed if we decide to go through that method. He should auto generate this div himself.--> 
