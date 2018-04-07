@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +15,11 @@
 
   </head>
 
+ <?php
+      session_start();
+
+    ?>
+
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" >
@@ -26,9 +30,9 @@
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item name"> Name</li>
-          <li class="nav-item major">Major : Minor </li>
-          <li class="nav-item grad">Graduation Date</li>
+          <li class="nav-item name"> <?= $_SESSION['fullname'] ?></li>
+          <li class="nav-item major"><?= $_SESSION['major'] . " : " .  $_SESSION['minor'] ?></li>
+          <li class="nav-item grad"><?php echo "Graduation Date: " .  $_SESSION['datee'] ?></li>
         </ul>
       </div>
     </nav>
@@ -72,7 +76,7 @@
           </table>
 
           <div class="button-hold">
-            <button class="email">Email List</button>
+            <button class="email" href="mailto:<?= $_SESSION['email']?>" >Email List</button>
           </div>
          
         </div>
