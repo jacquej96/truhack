@@ -1,9 +1,14 @@
 
 
+*{
+  font-family: Montserrat, serif;
+}
+
+
 body {
-  font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: black;
+  color: #343434;
+  background-color: #FDF7EB;
 }
 
 @media (min-width: 992px) {
@@ -21,7 +26,6 @@ h5,
 h6 {
   font-weight: 700;
   text-transform: uppercase;
-  color: black;
 }
 
 h1 {
@@ -33,17 +37,82 @@ h2 {
   font-size: 3.5rem;
 }
 
+.nav-item {
+  color: #FDF7EB;
+}
+
+.my-auto, button {
+  background-color: #343434;
+  color: #FDF7EB;
+}
+
+button {
+  border: 1px solid #FDF7EB; 
+  padding: 15px; 
+  margin: 20px; 
+  letter-spacing: 2px; 
+  width: 70px; 
+  height: 70px; 
+  border-radius: 35px;
+}
+
+table {
+    width:100%;
+    max-height: 400px;
+    overflow:scroll;
+}
+table, th, td {
+    border: 3px solid #FDF7EB;
+    border-collapse: collapse;
+    color: #343434;
+}
+
+th, td, tr {
+    padding: 15px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #FDF7EB;
+
+}
+tr:nth-child(odd) {
+   background-color: #DB4C2C;
+
+}
+th {
+    background-color: #343434;
+    color: #FDF7EB;
+}
+
+.no {
+  font-weight: bold;
+}
+
+.email {
+  width: 90px;
+  height:90px;
+  border-radius: 45px;
+}
+
+button:hover {
+    border: 1px solid #343434; 
+    background-color: #FDF7EB;
+    color: #343434;
+}
+
 .tablehold {
 	width: 65%;
-	padding: 30px; 
-	margin: 30px;
-	border: 1px solid black; 
+	padding-right: 30px; 
+	margin-right: 30px;
+	border: 1px solid #CECAC1; 
+  box-shadow: 3px 3px 1px #CECAC1;
+  text-align:center;
+  padding: 20px;
 }
 
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
 }
 
@@ -119,14 +188,18 @@ section.tinder-section .tinder-item .tinder-date {
 }
 
 .bg-primary {
-  background-color: #F88379 !important;
+  background-color: #DB4C2C !important;
 }
 
 .text-primary {
-  color: #F88379 !important;
+  color: #343434 !important;
 }
 
 a {
-  color: #F88379;
+  color: #343434;
+}
+
+a:hover, a:focus, a:active {
+  color: #343434;
 }
 
