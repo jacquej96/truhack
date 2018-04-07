@@ -10,6 +10,7 @@
     <title>CS Registration</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
@@ -35,20 +36,47 @@
     <div class="container-fluid p-0" >
 
       <section class="tinder-section p-1 p-lg-5 d-flex d-column" style="width: 100%;">
-        <div class="my-auto" style="width:100%;padding: 20px;text-align:center;border: 1px solid gray;box-shadow: 3px 3px 1px gray;">
-          <div class="subheading mb-5">NAME OF CLASS · COURSE NUMBER</div>
+          <div class="tablehold" id="table">
+             <div class="subheading mb-5">NAME OF CLASS · COURSE NUMBER</div>
           <p class="mb-5" id="descrip">(picture??)Class description goes here</p>
           <p class="mb-5" id="capteach">Capacity, teacher etc here </p> 
           <p class="mb-5" style="font-weight:bold;"id="type">Class type and credits</p>
           <div class="button-hold">
-          	<button class="yes">Placeholdyes</button>
-          	<button class="no">Placeholdno</button>
+            <button class="yes">&#10004</button>
+            <button class="no">X</button>
+          </div>
+         
+          </div>
+
+        <div class="my-auto" style="width:100%;padding: 20px;text-align:center;border: 1px solid #CECAC1;box-shadow: 3px 3px 1px #CECAC1;">
+          <div class="subheading mb-5">COURSE SELECTIONS</div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Number</th>
+              <th>Type</th>
+              <th>Credits</th>
+            </tr>
+            <tr>
+              <td>sample</td>
+              <td>sample</td>
+              <td>sample</td>
+              <td>sample</td>
+            </tr>
+            <tr>
+              <td>sample</td>
+              <td>sample</td>
+              <td>sample</td>
+              <td>sample</td>
+            </tr>
+          </table>
+
+          <div class="button-hold">
+            <button class="email">Email List</button>
           </div>
          
         </div>
-      <div class="tablehold" id="table">
-      	yote
-      </div>
+    
 
       </section>
 
