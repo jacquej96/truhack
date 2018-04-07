@@ -1,5 +1,7 @@
 <?php
 
+
+        session_start(); 
           $fullname = $_POST['fullname'];
           $email = $_POST['email'];
           $password = $_POST['password'];
@@ -11,6 +13,16 @@
           $C = $_POST['C']; 
           $G = $_POST['G']; 
           $S = $_POST['S']; 
+
+
+  $_SESSION['fullname'] = $fullname; 
+  $_SESSION['email'] = $email; 
+  $_SESSION['major'] = $major; 
+  $_SESSION['minor'] = $minor; 
+  $_SESSION['datee'] = $datee; 
+
+
+
 
           try {
           $conn = new PDO("mysql:host=mysql.truman.edu;dbname=cef6418CS315", "cef6418", "ohbiethe");
@@ -37,6 +49,7 @@
           {
           echo "Error: " . $e->getMessage();
           }
+
 
           // end the DB connection.
           $conn = null;
