@@ -16,22 +16,21 @@ jQuery(document).ready(function(){
   });
 })
 
+//TODO use the credit fields to get lower and upper credit bounds
 /*function sortByCredits(){
   //TODO figure out a better way for long term sorting...different types of sorting per person
   arr_index++;
   if (arr[arr_index].getCredits() === amount) //courseList[arr_index])
   {
-
+    //display the card
   }
+  else{ // dont display it}
 }*/
 
 function cardswap() {
 
   input = document.getElementById("sauce").innerHTML;
   arr = input.split("!");
-
-
-
   document.getElementById("class_number").innerHTML = arr[arr_index++] + ": CS " + arr[arr_index++];
   document.getElementById("capteach").innerHTML = "Dr. " + arr[arr_index++] + " · " + arr[arr_index++] + " Seats";
   document.getElementById("descrip").innerHTML = arr[arr_index++];
@@ -48,12 +47,10 @@ function append_subtract() {
   var num = document.getElementById(letter.toString()).innerHTML;
   num -= credits;
   if(num < 0) num = 0
-    else{
-  document.getElementById(letter.toString()).innerHTML = num;
-  document.getElementById("wew").innerHTML += document.getElementById("class_number").innerHTML + " " + document.getElementById("capteach").innerHTML + "\n";
-
-
-    };
+  else{
+    document.getElementById(letter.toString()).innerHTML = num;
+    document.getElementById("wew").innerHTML += document.getElementById("class_number").innerHTML + " " + document.getElementById("capteach").innerHTML + "\n";
+  };
 
 }
 
@@ -65,7 +62,7 @@ function swipeDown(){
 }
 
 function swipeRight(){
-  //TODO make this go right and scale down to slurp into the schedule table
+  //TODO make this go right AND scale down to slurp into the schedule table
   //jQuery("#clone").style.transform = "scale(20deg)";
   jQuery("#clone").hide("slide", {direction: "right"}, 300, function() {
     jQuery("#clone").remove();
